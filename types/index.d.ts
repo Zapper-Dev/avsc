@@ -165,6 +165,7 @@ export class Type {
   equals(type: Type): boolean;
   fingerprint(algorithm?: string): Buffer;
   fromBuffer(buffer: Buffer, resolver?: Resolver, noCheck?: boolean): any;
+  fromBufferUnsafe(buffer: Buffer, resolver?: Resolver, noCheck?: boolean): any;
   fromString(str: string): any;
   inspect(): string;
   isValid(val: any, opts?: Partial<IsValidOptions>): boolean;
